@@ -11,6 +11,13 @@
 		DC2B14642BE5818E00100B41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B14632BE5818E00100B41 /* ContentView.swift */; };
 		DC2B14662BE5818F00100B41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2B14652BE5818F00100B41 /* Assets.xcassets */; };
 		DC2B146A2BE5818F00100B41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC2B14692BE5818F00100B41 /* Preview Assets.xcassets */; };
+		DC2B14712BE5830600100B41 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B14702BE5830600100B41 /* DataController.swift */; };
+		DC2B14762BE5839600100B41 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC2B14742BE5839600100B41 /* Database.xcdatamodeld */; };
+		DC2B14782BE583A100100B41 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B14772BE583A100100B41 /* OnboardingView.swift */; };
+		DC2B147A2BE583AE00100B41 /* AddRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B14792BE583AE00100B41 /* AddRecipeView.swift */; };
+		DC2B147C2BE584A900100B41 /* EditRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B147B2BE584A900100B41 /* EditRecipeView.swift */; };
+		DC2B147E2BE584B400100B41 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B147D2BE584B400100B41 /* RecipeDetailView.swift */; };
+		DC2B14802BE584CA00100B41 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B147F2BE584CA00100B41 /* ImagePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		DC2B14652BE5818F00100B41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC2B14672BE5818F00100B41 /* Sous.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sous.entitlements; sourceTree = "<group>"; };
 		DC2B14692BE5818F00100B41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DC2B14702BE5830600100B41 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		DC2B14752BE5839600100B41 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		DC2B14772BE583A100100B41 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DC2B14792BE583AE00100B41 /* AddRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeView.swift; sourceTree = "<group>"; };
+		DC2B147B2BE584A900100B41 /* EditRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipeView.swift; sourceTree = "<group>"; };
+		DC2B147D2BE584B400100B41 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		DC2B147F2BE584CA00100B41 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +66,11 @@
 		DC2B14602BE5818E00100B41 /* Sous */ = {
 			isa = PBXGroup;
 			children = (
-				DC2B14612BE5818E00100B41 /* SousApp.swift */,
-				DC2B14632BE5818E00100B41 /* ContentView.swift */,
-				DC2B14652BE5818F00100B41 /* Assets.xcassets */,
 				DC2B14672BE5818F00100B41 /* Sous.entitlements */,
+				DC2B14612BE5818E00100B41 /* SousApp.swift */,
+				DC2B14722BE5832700100B41 /* View */,
+				DC2B14732BE5833200100B41 /* Data */,
+				DC2B14652BE5818F00100B41 /* Assets.xcassets */,
 				DC2B14682BE5818F00100B41 /* Preview Content */,
 			);
 			path = Sous;
@@ -67,6 +82,28 @@
 				DC2B14692BE5818F00100B41 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DC2B14722BE5832700100B41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC2B14632BE5818E00100B41 /* ContentView.swift */,
+				DC2B14772BE583A100100B41 /* OnboardingView.swift */,
+				DC2B14792BE583AE00100B41 /* AddRecipeView.swift */,
+				DC2B147B2BE584A900100B41 /* EditRecipeView.swift */,
+				DC2B147D2BE584B400100B41 /* RecipeDetailView.swift */,
+				DC2B147F2BE584CA00100B41 /* ImagePickerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC2B14732BE5833200100B41 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DC2B14702BE5830600100B41 /* DataController.swift */,
+				DC2B14742BE5839600100B41 /* Database.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC2B14642BE5818E00100B41 /* ContentView.swift in Sources */,
+				DC2B14712BE5830600100B41 /* DataController.swift in Sources */,
+				DC2B147A2BE583AE00100B41 /* AddRecipeView.swift in Sources */,
+				DC2B14762BE5839600100B41 /* Database.xcdatamodeld in Sources */,
+				DC2B14802BE584CA00100B41 /* ImagePickerView.swift in Sources */,
+				DC2B14782BE583A100100B41 /* OnboardingView.swift in Sources */,
 				DC2B14622BE5818E00100B41 /* SousApp.swift in Sources */,
+				DC2B147C2BE584A900100B41 /* EditRecipeView.swift in Sources */,
+				DC2B147E2BE584B400100B41 /* RecipeDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +318,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -282,9 +327,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -292,7 +337,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kylegraham.Sous;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,6 +358,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -320,9 +367,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.4;
@@ -330,7 +377,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.kylegraham.Sous;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,6 +407,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC2B14742BE5839600100B41 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC2B14752BE5839600100B41 /* Database.xcdatamodel */,
+			);
+			currentVersion = DC2B14752BE5839600100B41 /* Database.xcdatamodel */;
+			name = Database.xcdatamodeld;
+			path = /Users/kylegraham/Desktop/Sous/Sous/Data/Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DC2B14562BE5818E00100B41 /* Project object */;
 }
